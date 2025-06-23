@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página inicial</title>
+        <link rel="icon" type="image/x-icon" href="../images/icon.png">
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Registrar Funcionário</h1>
+            <nav>
+                <a href="/">Página Inicial</a>
+                <a href="/historico">Histórico de vendas</a>
+            </nav>
+        </header>
+        <div class="container">
+            <form action="/salvar" method="post">
+                <input type="text" name="nome" placeholder="Nome do funcionário" required>
+                <br><br>
+                <input type="number" name="vendas" step="0.01" placeholder="Total de Vendas" required>
+                <br><br>
+                <input type="number" name="meta" step="0.01" placeholder="Meta do Mês" required>
+                <br><br>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </body>
+</html>
